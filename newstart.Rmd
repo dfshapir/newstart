@@ -15,3 +15,9 @@ library(readxl)
 agg_newstart <- read_xlsx("raw-data/New Start Stats.xlsx")
 ```
 
+```{r}
+ggplot(agg_newstart, aes(x = `Report Date`, y = Number, color = Country, group = Category
+                        )) +
+  geom_col()
+```
+
